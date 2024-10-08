@@ -21,8 +21,7 @@ export const InputDataTable = () => {
 
   return (
     <div>
-      <h2>Tabla Editable de Sucursales</h2>
-      <table border="1" cellPadding="10">
+      <table>
         <thead>
           <tr>
             <th>Sucursal</th>
