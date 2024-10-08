@@ -1,5 +1,5 @@
+import { InputData } from "../componets/Forms/InputData";
 import "./Recorridos.css";
-import "../componets/Forms/InputData";
 export const Recorridos = () => {
     return(<>
         <div className = "contaimerRecorridos">

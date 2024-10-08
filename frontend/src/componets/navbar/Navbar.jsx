@@ -4,7 +4,7 @@ import './Navbar.css';  // Archivo CSS para los estilos
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1 className="navbar-title">Mi Proyecto</h1>
+      <h1 className="navbar-title">Recorridos y Negocios</h1>
     </nav>
   );
 };
