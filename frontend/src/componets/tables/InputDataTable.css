@@ -1,0 +1,57 @@
+/* TablaEditable.css */
+
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  /* Encabezado de la tabla */
+  th {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd; /* Borde para las celdas */
+  }
+  
+  /* Filas de la tabla */
+  td {
+    padding: 12px 15px;
+    border: 1px solid #ddd; /* Borde alrededor de las celdas */
+    text-align: center; /* Centrado de texto */
+  }
+  
+  /* Estilos alternos para las filas */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+  }
+  
+  tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón por encima */
+  }
+  
+  /* Campos editables */
+  input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Ajuste para el contenedor de la tabla */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para la tabla */
+  }
+  
