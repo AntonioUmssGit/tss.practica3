@@ -47,6 +47,7 @@ export const InputDataTable = () => {
                   name="distanciaRecorrida"
                   value={row.distanciaRecorrida}
                   onChange={(e) => handleInputChange(e, index)}
+                  step="10"
                 />
               </td>
             </tr>

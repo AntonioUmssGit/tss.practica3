@@ -19,23 +19,25 @@ thead {
     top: 0;
 }
 
+th:hover{
+    background-color: #1d2225;
+}
+
 th {
     color: white;
     padding: 12px 15px;
     text-align: center;
     font-weight: bold;
-    border: 1px solid #ddd;
 }
   
-  td {
-    padding: 12px 15px;
-    border: 1px solid #ddd; /* Borde alrededor de las celdas */
+td {
+    padding: 12px 15px;; /* Borde alrededor de las celdas */
     text-align: center; /* Centrado de texto */
-  }
+}
   
-  tr:hover {
+tr:hover {
     background-color: #ddd; /* Color de fondo al pasar el ratón por encima */
-  }
+}
   
   /* Campos editables */
   input[type="number"] {
