@@ -6,7 +6,7 @@ export const Recorridos = () => {
             <h1>Recorridos Simulacion</h1>
             <h2>Lista de Sucursales</h2>
             <InputDataTable/>
-            <button>mejorar Recorrido</button>
+            <button className="styleButton">mejorar Recorrido</button>
         </div>    
     </>)
 }

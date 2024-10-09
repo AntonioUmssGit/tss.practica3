@@ -4,3 +4,19 @@
     padding: 20px;
     color: black;
 }
+
+.styleButton {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #30393e;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.styleButton:hover{
+    width: 85%;
+    background-color: #1d2225;
+    cursor: pointer;
+}
