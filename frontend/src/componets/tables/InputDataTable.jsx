@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import './InputDataTable.css';
 
-export const InputDataTable = () => {
+export const InputDataTable = ({ onSendData }) => { 
   const [data, setData] = useState([
     { id: 1, numeroRecorridos: 50, distanciaRecorrida: 30 },
     { id: 2, numeroRecorridos: 2, distanciaRecorrida: 30 },
-    { id: 3, numeroRecorridos: 8, distanciaRecorrida: 20},
+    { id: 3, numeroRecorridos: 8, distanciaRecorrida: 20 },
     { id: 4, numeroRecorridos: 72, distanciaRecorrida: 20 },
-    { id: 5, numeroRecorridos: 12, distanciaRecorrida: 10},
-    { id: 6, numeroRecorridos: 20, distanciaRecorrida: 10}
+    { id: 5, numeroRecorridos: 12, distanciaRecorrida: 10 },
+    { id: 6, numeroRecorridos: 20, distanciaRecorrida: 10 }
   ]);
 
-  // Función para manejar los cambios en las celdas
   const handleInputChange = (event, index) => {
     const { name, value } = event.target;
     const newData = [...data];
@@ -53,7 +52,9 @@ export const InputDataTable = () => {
             </tr>
           ))}
         </tbody>
+
       </table>
+      <button className = 'styleButton' onClick={() => onSendData(data)}>Mejorar Recorrido</button>
     </div>
   );
 };
