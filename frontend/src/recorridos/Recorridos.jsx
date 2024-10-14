@@ -15,6 +15,7 @@ export const Recorridos = () => {
         <div className = "contaimerRecorridos">
             <h1>Recorridos Simulacion</h1>
             <h2>Lista de Sucursales</h2>
+            
             <InputDataTable onSendData={handleSendData}/>
         </div>    
     </>)
