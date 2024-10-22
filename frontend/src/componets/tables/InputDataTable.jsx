@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
-import './InputDataTable.css';
+import React, { useState, useEffect } from "react";
+import "./InputDataTable.css";
 
-export const InputDataTable = ({ onSendData }) => { 
-  const [data, setData] = useState([
-    { id: 1, numeroRecorridos: 50, distanciaRecorrida: 30 },
-    { id: 2, numeroRecorridos: 2, distanciaRecorrida: 30 },
-    { id: 3, numeroRecorridos: 8, distanciaRecorrida: 20 },
-    { id: 4, numeroRecorridos: 72, distanciaRecorrida: 20 },
-    { id: 5, numeroRecorridos: 12, distanciaRecorrida: 10 },
-    { id: 6, numeroRecorridos: 20, distanciaRecorrida: 10 }
-  ]);
+export const InputDataTable = ({ data, onSendData }) => {
+  const [tableData, setTableData] = useState(data);
+
+  useEffect(() => {
+    setTableData(data);
+  }, [data]);
 
   const handleInputChange = (event, index) => {
     const { name, value } = event.target;
-    const newData = [...data];
+    const newData = [...tableData];
     newData[index][name] = value;
-    setData(newData);
+    setTableData(newData);
   };
 
   return (
@@ -29,7 +26,7 @@ export const InputDataTable = ({ onSendData }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((row, index) => (
+          {tableData.map((row, index) => (
             <tr key={row.id}>
               <td>{row.id}</td>
               <td>
@@ -52,9 +49,10 @@ export const InputDataTable = ({ onSendData }) => {
             </tr>
           ))}
         </tbody>
-
       </table>
-      <button className = 'styleButton' onClick={() => onSendData(data)}>Mejorar Recorrido</button>
+      <button className="styleButton" onClick={() => onSendData(tableData)}>
+        Mejorar Recorrido
+      </button>
     </div>
   );
 };

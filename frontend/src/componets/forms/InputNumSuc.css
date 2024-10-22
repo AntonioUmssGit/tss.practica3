@@ -1,0 +1,21 @@
+.stylesContetdForm{
+    height: 100%;
+    width: 100%;
+    background-color: #30393e;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+}
+
+.imputFieldStyle{
+    height: 100%;
+    
+}
+
+.styleErrores{
+    color: red;
+    font-size: 13px;
+}
